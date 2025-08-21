@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <form>
+        <div>
+            <label for="name">Name
+                <input type="text" id="name" value="Uriel Correia">
+                <!-- o "label" é como se fosse uma descrição da caixa de texto criada pelo input -->
+            </label>
+        </div>
+        <div>
+            <label for="email">Email
+                <input type="email" id="email" required >
+                <!-- "required" funciona como um verificador se o que foi digitado doi de fato um email, ou até se foi digitado algo -->
+            </label>
+        </div>   
+
+        <div>
+            <input type="radio" name="preço" value=" 150">R$150,00
+            <input type="radio" name="preço" value=" 200">R$200,00
+            <input type="radio" name="preço" value=" 250">R$250,00
+            <input type="radio" name="preço" value=" 300">R$300,00
+        </div>
+        <!-- O input do tipo "radio" permite que apenas seja selecionado uma única opção -->
+
+        <div>
+            <input type="checkbox" name="Preço" value="150">R$150,00
+            <input type="checkbox" name="Preço" value="200">R$200,00
+            <input type="checkbox" name="Preço" value="250">R$250,00
+            <input type="checkbox" name="Preço" value="300">R$300,00
+        </div>
+        <!-- O input do tipo "checkbox" permite que seja selecionado mais de uma opção -->
+        
+        <div>
+            <label>
+                Selecione uma cidade <br>
+                <select>
+                    <option value="" selected>Selecione uma cidade</option>
+                    <option value="Salvador">Salvador</option>
+                    <option value="Pojuca">Pojuca</option>
+                    <option value="Dias d'Ávila">Dias d'Ávila</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                Deixe sua opnião
+            </label> <br>
+            <textarea></textarea>
+        </div>
+
+        <button>Enviar formulário</button>
+
+    </form>
+
+    <!-- O "value" utilizado pode ter vários significados conforme o elemento com que é utilizado -->
+
+</body>
+</html>
