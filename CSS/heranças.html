@@ -7,34 +7,33 @@
 
 <style>
 
-    article{
-        width: 200px;
-        margin: 0 auto;
-    }
-
-    .container{
-        background: red;
-    }
-
-    #texto_1{
+    article section p{
+        background-color: red;
         color: white;
         padding: 30px;
+    }
+
+    article section article p{
+        width: 200px;
+        margin: 0 auto;
     }
 
 </style>
 
 <body>
     <article>
-        <section class="container">
-            <p id="texto_1">
+        <section>
+            <p>
                 Aqui é um novo Texto.
             </p>
         </section>
 
-        <section class="container">
-            <p id="texto_2">
-                Aqui é um novo texto.
-            </p>
+        <section>
+            <article>
+                <p>
+                    Aqui é um novo texto.
+                </p>
+            </article>
         </section>
     </article>
 </body>
