@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        .container {
+            background-color: blueviolet;
+            color: white;
+            margin: 40px 0;
+            position: relative;
+            padding: 120px;
+
+            /* static: Predefinição de uma  */
+            /* position: static; */
+            
+        }
+
+        .filho-relative {
+            background-color: red;
+            position: relative;
+            top: 10px;
+            left: 20px;
+            bottom: 20px;
+            right: 50px;
+
+            width: 120px;
+            
+        }
+        /* Tomar cuidado ao utilizar o position relative */
+
+        .filho-absolute {
+            background-color: red;
+            position: absolute;
+
+            top: 100px;
+            right: 10px;
+        }
+        .fixed {
+            color: #fff;
+            background-color: red;
+
+            position: fixed;
+            top: 0px;
+
+            z-index: 999;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="fixed">
+        Texto fixed
+    </div>
+
+    <div class="container">
+
+        Texto 1
+
+        <div class="filho-relative">
+            Texto 2
+        </div>
+
+        Texto 3
+
+    </div>
+
+    <div class="container">
+
+        Texto 1
+
+        <div class="filho-absolute">
+            Texto 2
+        </div>
+
+        Texto 3
+        
+    </div>
+
+    <div class="container">
+
+        Texto 1
+
+        <div class="filho-relative">
+            Texto 2
+        </div>
+
+        Texto 3
+
+    </div>
+
+    <div class="container">
+
+        Texto 1
+
+        <div class="filho-absolute">
+            Texto 2
+        </div>
+
+        Texto 3
+        
+    </div>
+    
+</body>
+</html>
