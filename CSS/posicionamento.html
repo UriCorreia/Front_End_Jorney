@@ -12,9 +12,7 @@
             position: relative;
             padding: 120px;
 
-            /* static: Predefinição de uma  */
-            /* position: static; */
-            
+            /* static: Segue o padrão predefinido da página */            
         }
 
         .filho-relative {
@@ -29,6 +27,7 @@
             
         }
         /* Tomar cuidado ao utilizar o position relative */
+        /* No relative, o elemento é posicionado em relação a si mesmo começando no canto superior esquerdo */
 
         .filho-absolute {
             background-color: red;
@@ -37,6 +36,8 @@
             top: 100px;
             right: 10px;
         }
+        /* Absolute: Nela o elemento pe posicinado em relação ao seu pai ou primeiro elemto em que se encontra posicionado absolutamente */
+
         .fixed {
             color: #fff;
             background-color: red;
@@ -46,6 +47,7 @@
 
             z-index: 999;
         }
+        /* Com o fixed, o elemento com essa propriedade permanece fixo na tela independete de rolar a página */
 
     </style>
 </head>
