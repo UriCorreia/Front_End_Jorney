@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variáveis, onClick, funções e interação com HTML</title>
+</head>
+<body>
+
+    <h1 id="Hello"></h1>
+    <h2 id="Hello_name"></h2>
+    <h2 id="Hello_name_2"></h2>
+
+    <button onclick="swicthName()">
+        Switch first name 
+    </button>
+
+    <script>
+
+        document.getElementById("Hello").textContent = "Hello World";
+        // document(relaciona todo o documento).getElementary()(Procura o elemento com uma id específica).textContent(adiciona o texto como conteúdo)
+
+        let name = "Uriel";
+        // Sempre que for criar uma variável utilizamos o let
+
+        document.getElementById("Hello_name").textContent = "Hello " + name;
+
+        name = "Lorrane";
+
+        document.getElementById("Hello_name_2").textContent = "Hello " + name;
+
+        function swicthName(){
+
+            name = "Idalina";
+
+            document.getElementById("Hello_name").textContent = "Hello " + name;
+        }
+
+    </script>
+
+</body>
+</html>
