@@ -6,6 +6,7 @@
     <title>pegando valores de entrada do usuário e escrevendo na tela</title>
 </head>
 <body>
+
     <h1>
         To-do List
     </h1>
@@ -14,15 +15,17 @@
         Add your Tasks
     </p>
 
-    <input type="text" placeholder="Type your new task">
+    <input id="input_task" type="text" placeholder="Type your new task">
 
     <button onclick="addedTask()">
         Add Task
     </button>
 
-
     <p id="message"></p>
 
+    <ul id="task_list"></ul>
+
     <script src="entr_val.js"></script>
+
 </body>
 </html>
